@@ -1,0 +1,10 @@
+.borderGreen{
+    border: 5px solid green;
+}
+.borderRed{
+    border: 5px solid red;
+}
+.borderBase{
+    border: 5px solid black;
+
+}
