@@ -114,7 +114,7 @@ function App() {
   {/* <DataAllposts /> */}
 
   <Navbar />
-  <Link to="http://localhost:5000/logout">Se deconnecter</Link>
+  <Link to="https://expressbackenddev4g2-jv4h.onrender.com/logout">Se deconnecter</Link>
   <AppContainer>
   <Routes>
     <Route path='/' element={<Home />} />

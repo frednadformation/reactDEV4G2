@@ -5,7 +5,7 @@ function UserPage() {
     const [jwt, setJWT] = useState({});
 
     useEffect(()=>{
-        axios.get('http://localhost:5000/getJWT', {withCredentials:true })
+        axios.get('https://expressbackenddev4g2-jv4h.onrender.com/getJWT', {withCredentials:true })
         .then(response =>{
             setJWT(response.data);
             console.log(response.data);

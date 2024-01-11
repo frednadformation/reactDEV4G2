@@ -34,7 +34,7 @@ function FetchAllContact() {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(()=>{
-        axios.get('http://localhost:5000/')
+        axios.get('https://expressbackenddev4g2-jv4h.onrender.com/')
         .then(response =>{
             dispatch({type : 'FETCH_SUCCESS', payload: response.data})
         })
@@ -53,7 +53,7 @@ function FetchAllContact() {
 
                 
                     <div key={index}>
-                    <Link to={`http://localhost:3000/contact/${contact._id}`}>
+                    <Link to={`/contact/${contact._id}`}>
                         <h1>{contact.lastName}</h1>
                         <h1>{contact.firstName}</h1>
                     </Link>

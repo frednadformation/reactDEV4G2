@@ -11,7 +11,7 @@ function DataFetchAll() {
   const [contacts, setContacts] = useState({});
 
   useEffect(()=>{
-    axios.get('http://localhost:5000/')
+    axios.get('https://expressbackenddev4g2-jv4h.onrender.com/')
     .then((response)=>{
       setLoading(false);
       setError('');

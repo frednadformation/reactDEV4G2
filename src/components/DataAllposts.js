@@ -31,7 +31,7 @@ function DataAllposts() {
     const [state, dispatch] = useReducer(reducer, initialState)
 
     useEffect(() =>{
-        axios.get('http://localhost:5000/allposts')
+        axios.get('https://expressbackenddev4g2-jv4h.onrender.com/allposts')
         .then((response) => {
             dispatch({type: 'FETCH_SUCCESS', payload: response.data})
         })

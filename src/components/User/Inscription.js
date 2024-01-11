@@ -38,7 +38,7 @@ function Inscription() {
   );
   
   // return (
-  //   <form action="http://localhost:5000/api/inscription" method="post">
+  //   <form action="https://expressbackenddev4g2-jv4h.onrender.com/api/inscription" method="post">
   //       <label for="">Username</label>
   //       <input type="text" name="username"/>
   //       <br/>

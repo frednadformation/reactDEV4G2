@@ -35,8 +35,8 @@ function FetchOneContact() {
     console.log(params.id);
 
     useEffect(()=>{
-        // axios.get(`http://localhost:5000/formulaire/${params.id}`)
-        axios.get('http://localhost:5000/formulaire/' + params.id)
+        // axios.get(`https://expressbackenddev4g2-jv4h.onrender.com/formulaire/${params.id}`)
+        axios.get('https://expressbackenddev4g2-jv4h.onrender.com/formulaire/' + params.id)
         .then(response =>{
             setLoading(false);
             setError('');
@@ -61,7 +61,7 @@ function FetchOneContact() {
         <p>{loading ? 'Loading....' : contact.email}</p>
         <p>{loading ? 'Loading....' : contact.message}</p>
 
-    <form action={`http://localhost:5000/edit/${params.id}?_method=PUT`} method="post">
+    <form action={`https://expressbackenddev4g2-jv4h.onrender.com/edit/${params.id}?_method=PUT`} method="post">
         <input type='hidden' name='_method' value="PUT" />
         first name <input type="text" name="firstName" value={firstName} onChange={handleFirstname} /><br/>
         last name <input type="text" name="lastName" value={lastName} onChange={handleLastname} /><br/>
