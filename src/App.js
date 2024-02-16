@@ -28,6 +28,8 @@ import NewContact from './components/Contact/NewContact';
 import Inscription from './components/User/Inscription';
 import Connexion from './components/User/Connexion';
 import UserPage from './components/User/UserPage';
+import ImageUpload from './components/ImageUpload';
+import FileUploadForm from './components/FileUploadForm';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import SuperHero from './components/SuperHeros';
@@ -136,6 +138,9 @@ function App() {
     <Route path='/inscription/' element={<Inscription />}/>
     <Route path='/connexion/' element={<Connexion />}/>
     <Route path='/userpage/' element={<UserPage />}/>
+
+    <Route path='/imageupload/' element={<ImageUpload />}/>
+    <Route path='/imageuploads/' element={<FileUploadForm/>}/>
 
     <Route path='/*' element={<NotFound />} />
 
