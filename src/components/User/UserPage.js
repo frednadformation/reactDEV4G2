@@ -21,6 +21,7 @@ function UserPage() {
     
     {jwt.username}
     <br/>
+    
     {jwt.id}
     <br/>
     {jwt.admin ? "Welcome admin" : "Welcome User" }
