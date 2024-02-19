@@ -30,6 +30,7 @@ import Connexion from './components/User/Connexion';
 import UserPage from './components/User/UserPage';
 import ImageUpload from './components/ImageUpload';
 import FileUploadForm from './components/FileUploadForm';
+import NewPost from './components/NewPost';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import SuperHero from './components/SuperHeros';
@@ -141,6 +142,8 @@ function App() {
 
     <Route path='/imageupload/' element={<ImageUpload />}/>
     <Route path='/imageuploads/' element={<FileUploadForm/>}/>
+    
+    <Route path='/newpost/' element={<NewPost/>}/>
 
     <Route path='/*' element={<NotFound />} />
 
